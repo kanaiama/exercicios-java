@@ -1,5 +1,5 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+* Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package exercicio.carros;
@@ -20,25 +20,18 @@ public class App {
        
         carros.add(carro1);
         
-        Carro carro2 = new Carro
-        ("Santa Fé", 40000.00, 2013, "Hyundai");
-       
-        carros.add(carro2);
+        // Forma mais correta \/
+        carros.add(new Carro
+        ("Santa Fé", 40000.00, 2013, "Hyundai"));
         
-        Carro carro3 = new Carro
-        ("Audi R3 Turbo", 100000.00, 2017, "Audi");
-       
-        carros.add(carro3);
+        carros.add( new Carro
+        ("Audi R3 Turbo", 100000.00, 2017, "Audi"));
         
-        Carro carro4 = new Carro
-        ("Golf GTI", 180000.00, 2021, "Volkswagen");
-       
-        carros.add(carro4);
+        carros.add(new Carro
+       ("Golf GTI", 180000.00, 2021, "Volkswagen"));
         
-        Carro carro5 = new Carro
-        ("BMW X6", 755000.00, 2022, "BMW");
-       
-        carros.add(carro5);
+        carros.add(new Carro
+        ("BMW X6", 755000.00, 2022, "BMW"));
         
         System.out.println("Carros com ano maior que 2018: ");
         
